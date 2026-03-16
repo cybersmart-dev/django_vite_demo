@@ -1,0 +1,1 @@
+var e=(e,t)=>()=>(e&&(t=e(e=0)),t),t=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),n=e((()=>{})),r=t((()=>{n(),console.log(`Hello, World!`),console.log(`Hello, Vite!`)}));export default r();
