@@ -15,6 +15,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         text: resolve("./static/js/main.js"),
+        images: resolve('./static/img')
       },
     },
   },
