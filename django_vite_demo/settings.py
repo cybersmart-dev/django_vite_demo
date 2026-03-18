@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-71!=ng2=zfcas+z3f5oa-pb$@k+&s=nm239$kq6^3afq0^r6=_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -119,13 +119,15 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'assets'
+    BASE_DIR / 'static'
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DJANGO_VITE = {
   "default": {
-    "dev_mode": DEBUG
+    "dev_mode": DEBUG,
+    "dev_server_host": "192.168.43.69",
+    "dev_server_port": 5173,
   }
 }

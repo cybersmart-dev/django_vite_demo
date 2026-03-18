@@ -2,6 +2,6 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def index(requset):
+def index(request):
 
-    return render(requset, 'core/index.html')
+    return render(request, 'base.html')
